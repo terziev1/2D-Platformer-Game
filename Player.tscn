@@ -1,61 +1,142 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
-[ext_resource path="res://sprites/player/characters1.png" type="Texture" id=2]
-[ext_resource path="res://sprites/player/characters2.png" type="Texture" id=3]
-[ext_resource path="res://sprites/player/characters3.png" type="Texture" id=4]
-[ext_resource path="res://sprites/player/characters4.png" type="Texture" id=5]
-[ext_resource path="res://sprites/player/characters5.png" type="Texture" id=6]
-[ext_resource path="res://sprites/player/characters6.png" type="Texture" id=7]
-[ext_resource path="res://sprites/player/characters7.png" type="Texture" id=8]
-[ext_resource path="res://sprites/player/characters8.png" type="Texture" id=9]
-[ext_resource path="res://sprites/player/characters9.png" type="Texture" id=10]
-[ext_resource path="res://sprites/player/characters11.png" type="Texture" id=11]
-[ext_resource path="res://sprites/player/characters12.png" type="Texture" id=12]
+[ext_resource path="res://sprites/choro/adventurer-idle-2-00.png" type="Texture" id=2]
+[ext_resource path="res://sprites/choro/adventurer-idle-2-01.png" type="Texture" id=3]
+[ext_resource path="res://sprites/choro/adventurer-idle-2-02.png" type="Texture" id=4]
+[ext_resource path="res://sprites/choro/adventurer-idle-2-03.png" type="Texture" id=5]
+[ext_resource path="res://sprites/choro/adventurer-attack3-00.png" type="Texture" id=6]
+[ext_resource path="res://sprites/choro/adventurer-attack3-01.png" type="Texture" id=7]
+[ext_resource path="res://sprites/choro/adventurer-attack3-02.png" type="Texture" id=8]
+[ext_resource path="res://sprites/choro/adventurer-attack3-03.png" type="Texture" id=9]
+[ext_resource path="res://sprites/choro/adventurer-attack3-04.png" type="Texture" id=10]
+[ext_resource path="res://sprites/choro/adventurer-attack3-05.png" type="Texture" id=11]
+[ext_resource path="res://sprites/choro/adventurer-smrslt-00.png" type="Texture" id=12]
+[ext_resource path="res://sprites/choro/adventurer-smrslt-01.png" type="Texture" id=13]
+[ext_resource path="res://sprites/choro/adventurer-smrslt-02.png" type="Texture" id=14]
+[ext_resource path="res://sprites/choro/adventurer-smrslt-03.png" type="Texture" id=15]
+[ext_resource path="res://sprites/choro/adventurer-fall-00.png" type="Texture" id=16]
+[ext_resource path="res://sprites/choro/adventurer-fall-01.png" type="Texture" id=17]
+[ext_resource path="res://sprites/choro/adventurer-attack2-00.png" type="Texture" id=18]
+[ext_resource path="res://sprites/choro/adventurer-attack2-01.png" type="Texture" id=19]
+[ext_resource path="res://sprites/choro/adventurer-attack2-02.png" type="Texture" id=20]
+[ext_resource path="res://sprites/choro/adventurer-attack2-03.png" type="Texture" id=21]
+[ext_resource path="res://sprites/choro/adventurer-attack2-04.png" type="Texture" id=22]
+[ext_resource path="res://sprites/choro/adventurer-attack2-05.png" type="Texture" id=23]
+[ext_resource path="res://sprites/choro/adventurer-bow-00.png" type="Texture" id=24]
+[ext_resource path="res://sprites/choro/adventurer-bow-01.png" type="Texture" id=25]
+[ext_resource path="res://sprites/choro/adventurer-bow-02.png" type="Texture" id=26]
+[ext_resource path="res://sprites/choro/adventurer-bow-03.png" type="Texture" id=27]
+[ext_resource path="res://sprites/choro/adventurer-bow-04.png" type="Texture" id=28]
+[ext_resource path="res://sprites/choro/adventurer-bow-05.png" type="Texture" id=29]
+[ext_resource path="res://sprites/choro/adventurer-bow-06.png" type="Texture" id=30]
+[ext_resource path="res://sprites/choro/adventurer-bow-08.png" type="Texture" id=31]
+[ext_resource path="res://sprites/choro/adventurer-bow-07.png" type="Texture" id=32]
+[ext_resource path="res://sprites/choro/adventurer-run-00.png" type="Texture" id=33]
+[ext_resource path="res://sprites/choro/adventurer-run-01.png" type="Texture" id=34]
+[ext_resource path="res://sprites/choro/adventurer-run-02.png" type="Texture" id=35]
+[ext_resource path="res://sprites/choro/adventurer-run-03.png" type="Texture" id=36]
+[ext_resource path="res://sprites/choro/adventurer-run-04.png" type="Texture" id=37]
+[ext_resource path="res://sprites/choro/adventurer-run-05.png" type="Texture" id=38]
+[ext_resource path="res://sprites/choro/adventurer-die-00.png" type="Texture" id=39]
+[ext_resource path="res://sprites/choro/adventurer-die-01.png" type="Texture" id=40]
+[ext_resource path="res://sprites/choro/adventurer-die-02.png" type="Texture" id=41]
+[ext_resource path="res://sprites/choro/adventurer-die-03.png" type="Texture" id=42]
+[ext_resource path="res://sprites/choro/adventurer-die-04.png" type="Texture" id=43]
+[ext_resource path="res://sprites/choro/adventurer-die-05.png" type="Texture" id=44]
+[ext_resource path="res://sprites/choro/adventurer-die-06.png" type="Texture" id=45]
+[ext_resource path="res://sprites/choro/adventurer-jump-00.png" type="Texture" id=46]
+[ext_resource path="res://sprites/choro/adventurer-jump-01.png" type="Texture" id=47]
+[ext_resource path="res://sprites/choro/adventurer-jump-02.png" type="Texture" id=48]
+[ext_resource path="res://sprites/choro/adventurer-jump-03.png" type="Texture" id=49]
+[ext_resource path="res://sprites/choro/adventurer-attack1-00.png" type="Texture" id=50]
+[ext_resource path="res://sprites/choro/adventurer-attack1-01.png" type="Texture" id=51]
+[ext_resource path="res://sprites/choro/adventurer-attack1-02.png" type="Texture" id=52]
+[ext_resource path="res://sprites/choro/adventurer-attack1-03.png" type="Texture" id=53]
+[ext_resource path="res://sprites/choro/adventurer-attack1-04.png" type="Texture" id=54]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 7.39897, 11.789 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "attack3",
+"speed": 16.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": false,
+"name": "jump2",
+"speed": 16.0
+}, {
+"frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ) ],
+"loop": true,
+"name": "attack2",
+"speed": 16.0
+}, {
+"frames": [ ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": false,
+"name": "shoot",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ) ],
 "loop": true,
 "name": "run",
-"speed": 12.0
+"speed": 10.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
 "loop": true,
-"name": "jump",
-"speed": 12.0
+"name": "die",
+"speed": 5.0
 }, {
-"frames": [ ExtResource( 11 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": false,
+"name": "jump",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ) ],
 "loop": false,
 "name": "attack",
 "speed": 16.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
-editor/display_folded = true
 position = Vector2( 0, 0.0257092 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 1, 0.995552 )
+position = Vector2( -0.47948, -4.66402 )
+scale = Vector2( 0.900617, 0.917799 )
 frames = SubResource( 2 )
-animation = "jump"
+animation = "shoot"
+frame = 8
+speed_scale = 1.4
 
 [node name="Position2D" type="Position2D" parent="."]
-position = Vector2( 20, -6 )
+position = Vector2( 20, -0.0257092 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.9, 0.9 )
+limit_left = 0
+limit_top = -50
+limit_right = 862
+limit_bottom = 290
+smoothing_enabled = true
+smoothing_speed = 10.0
+editor_draw_limits = true
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
