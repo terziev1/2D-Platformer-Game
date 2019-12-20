@@ -11,14 +11,8 @@ Created using Godot engine
 - Added simple enemies
 - Added dynamic camera
 - Added parallax backgrounds
-
-## Coming soon
-
-- More enemies (complex ones)
 - Wall grab/climb/run
-- Better projectile animations
 - Different scenes
-- ~ 10 levels with different difficulty 
-- At least one boss fight
-- Player stats (hp dmg)
-- Dialogues
+
+
+# Repo discarded because of bad project structure - new project will be uploaded as as separate repo. 
