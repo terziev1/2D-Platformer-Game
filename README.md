@@ -1,5 +1,7 @@
 # Untitled 2D Platformer
 
+This repo was mostly about playing around with the Godot engine 
+
 Created using Godot engine
 
 ## Functionality created
